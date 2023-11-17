@@ -22,10 +22,10 @@ def getUrls(limit=1):
         else:
             return (False, [])
 
-def dynamicMaxLimit():
+def dynamicMaxLimit(deptUrl):
     max_limit = 1
     while True: 
-        base_url = "https://www.bu.edu/academics/cas/courses/computer-science/" + str(max_limit)
+        base_url = deptUrl + str(max_limit)
         data = getPage(base_url)
         if (data[0] == False):
             return (False, [])
