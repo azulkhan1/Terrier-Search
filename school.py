@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from major import getPage
+from major import getPage, dynamicMaxLimit
 
 url = getPage('https://www.bu.edu/academics/com/courses/')
 
@@ -21,13 +21,15 @@ def getDepartment(url):
                         link_dept = []
                         li_elements = ul.find_all('li')
                         for li in li_elements:
-                            a_tag = li.find('a')  # Find the 'a' element within the 'li'
+                            a_tag = li.find('a') 
                             if a_tag and a_tag.has_attr('href'):
-                                text = a_tag.get_text(strip=True)  # Extract the text, stripping whitespace
-                                if text == "All Departments":  # Skip the li element with text 'All Departments'
+                                text = a_tag.get_text(strip=True) 
+                                if text == "All Departments": 
                                     continue
-                                link = a_tag['href']  # Extract the link
-                                link_dept.append((link, text))  # Append the tuple to the list
+                                link = a_tag['href']
+                                link_dept.append((link, text))
                         return link_dept
 
-print(getDepartment(url))
+#departments = getDepartment(url)
+#deptlimit = dynamicMaxLimit(departments[2][0])
+#print(deptlimit)
