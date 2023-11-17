@@ -28,8 +28,22 @@ def getDepartment(url):
                                     continue
                                 link = a_tag['href']
                                 link_dept.append((link, text))
-                        return link_dept
+                        return (True, link_dept)
 
-#departments = getDepartment(url)
-#deptlimit = dynamicMaxLimit(departments[2][0])
-#print(deptlimit)
+departments = getDepartment(url)
+#print(departments)
+def dynamicMaxLimitHandler(departments):
+    if departments[0] == False:
+        return (False, [])
+    else:
+        depts = departments[1]
+        test = []
+        for d in depts:
+            max_limit = dynamicMaxLimit(d[0])
+            if max_limit[0] == False:
+                return (False, [])
+            test.append((d[0], max_limit[1]))
+        return test
+
+
+print(dynamicMaxLimitHandler(getDepartment(url)))
