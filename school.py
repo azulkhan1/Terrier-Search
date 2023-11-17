@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from major import getPage, dynamicMaxLimit
+from major import getPage, dynamicMaxLimit, getUrlsHandler
 
 url = getPage('https://www.bu.edu/academics/com/courses/')
 
@@ -30,20 +30,29 @@ def getDepartment(url):
                                 link_dept.append((link, text))
                         return (True, link_dept)
 
-departments = getDepartment(url)
-#print(departments)
 def dynamicMaxLimitHandler(departments):
     if departments[0] == False:
         return (False, [])
     else:
         depts = departments[1]
-        test = []
+        dept_limit = []
         for d in depts:
             max_limit = dynamicMaxLimit(d[0])
             if max_limit[0] == False:
                 return (False, [])
-            test.append((d[0], max_limit[1]))
-        return test
+            dept_limit.append((d[0], max_limit[1]))
+        return (True, dept_limit)
 
-
-print(dynamicMaxLimitHandler(getDepartment(url)))
+def departmentUrlHandler(deptinfo):
+    if deptinfo[0] == False:
+        return (False, [])
+    else:
+        baseUrl_maxLimit = deptinfo[1]
+        dept_urls = []
+        for BandM in baseUrl_maxLimit:
+            dept_course_links = getUrlsHandler(BandM)
+            if dept_course_links[0] == False:
+                return (False, [])
+            else:
+                dept_urls.append(dept_course_links[1])
+        return (True, dept_urls)
