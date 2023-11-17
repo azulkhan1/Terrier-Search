@@ -7,8 +7,10 @@ def getPage(url):
         return (False, [])
     return (True, request.content)
 
-def getUrls(limit=1):
-    base_url = "https://www.bu.edu/academics/cas/courses/computer-science/" + str(limit) 
+def getUrls(baseUrl_and_Limit):
+    url = baseUrl_and_Limit[0]
+    limit = str(baseUrl_and_Limit[1]) 
+    base_url = url + limit
     data = getPage(base_url)
 
     if (data[0] == False):
@@ -39,14 +41,16 @@ def dynamicMaxLimit(deptUrl):
                 break
     return (True, max_limit)
 
-def getUrlsHandler(max_limit=1): 
+def getUrlsHandler(baseUrl_and_maxLimit):
+    base_url = baseUrl_and_maxLimit[0] 
+    max_limit = baseUrl_and_maxLimit[1] 
     limit = 1
     links_array = []
     while limit <= max_limit:
-        if (getUrls(limit) == (False, [])):
+        if (getUrls((base_url, limit)) == (False, [])):
             return (False, [])
         else:
-            data = getUrls(limit)
+            data = getUrls((base_url, limit))
             links_array += data[1]
         limit += 1
     return (True, links_array)
