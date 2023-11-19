@@ -96,8 +96,6 @@ def getCourseContent(url):
         return (True, courseContent)
 
 def getCourseContentHandler(urls):
-    #if urls[0] == False:
-        #return (False, [])
     course_links = urls
     all_courses_info = []
     for link in course_links:

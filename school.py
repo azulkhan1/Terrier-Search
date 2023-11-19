@@ -30,7 +30,7 @@ def getDepartment(url):
                                 link_dept.append((link, text))
                         return (True, link_dept)
 
-#departs = getDepartment(url)
+departs = getDepartment(url)
 #print(departs)
 
 def dynamicMaxLimitHandler(departments):
@@ -46,7 +46,7 @@ def dynamicMaxLimitHandler(departments):
             dept_limit.append((d[0], max_limit[1]))
         return (True, dept_limit)
 
-#deptinfo = dynamicMaxLimitHandler(departs)
+deptinfo = dynamicMaxLimitHandler(departs)
 #print(deptinfo)
 
 def departmentUrlHandler(deptinfo):
@@ -63,8 +63,8 @@ def departmentUrlHandler(deptinfo):
                 dept_urls.append(dept_course_links[1])
         return (True, dept_urls)
 
+deptUrls = departmentUrlHandler(deptinfo) #[1]
 #print(departmentUrlHandler(deptinfo))
-#deptUrls = departmentUrlHandler(deptinfo) #[1]
 #print(len(deptUrls))
 
 
@@ -80,8 +80,30 @@ def departmentCourseContentHandler(deptCourseUrls):
                 return (False, [])
             else:
                 deptCourses.append(dept_course_urls[1])
-    return deptCourses
+    return (True, deptCourses)
 
-#deptCourseContent = departmentCourseContentHandler(deptUrls)
+deptCourseContent = departmentCourseContentHandler(deptUrls)
 #print(deptCourseContent)
 #print(len(deptCourseContent))
+
+def prepCsv(deptCourseContent):
+    if deptCourseContent[0] == False:
+        return False
+    else:
+        departments = getDepartment(url)
+        if departments[0] == False:
+            return (False, [])
+        else:
+            if len(deptCourseContent[1]) == len(departments[1]):
+                depart = departments[1]
+                deptCourseInfo = deptCourseContent[1]
+                csvInfo = []
+                for dep, info in zip(depart, deptCourseInfo):
+                    csvInfo.append((dep[1], info))
+                return (csvInfo)
+            else:
+                return (False, [])
+
+csv = prepCsv(deptCourseContent)
+#print(csv)
+#print(len(csv))
