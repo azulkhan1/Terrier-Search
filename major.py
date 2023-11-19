@@ -96,16 +96,15 @@ def getCourseContent(url):
         return (True, courseContent)
 
 def getCourseContentHandler(urls):
-    if urls[0] == False:
-        return (False, [])
-    else:
-        course_links = urls[1]
-        all_courses_info = []
-        for link in course_links:
-            base_url = "https://www.bu.edu/"
-            course_info = getCourseContent(base_url + link)
-            if course_info[0] == False:
-                return (False, [])
-            else:
-               all_courses_info.append(course_info[1])
-        return (True, all_courses_info)
+    #if urls[0] == False:
+        #return (False, [])
+    course_links = urls
+    all_courses_info = []
+    for link in course_links:
+        base_url = "https://www.bu.edu/"
+        course_info = getCourseContent(base_url + link)
+        if course_info[0] == False:
+            return (False, [])
+        else:
+            all_courses_info.append(course_info[1])
+    return (True, all_courses_info)
