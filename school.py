@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from major import getPage, dynamicMaxLimit, getUrlsHandler
+from major import getPage, dynamicMaxLimit, getUrlsHandler, getCourseContentHandler
 
 url = getPage('https://www.bu.edu/academics/com/courses/')
 
@@ -30,6 +30,9 @@ def getDepartment(url):
                                 link_dept.append((link, text))
                         return (True, link_dept)
 
+#departs = getDepartment(url)
+#print(departs)
+
 def dynamicMaxLimitHandler(departments):
     if departments[0] == False:
         return (False, [])
@@ -42,6 +45,9 @@ def dynamicMaxLimitHandler(departments):
                 return (False, [])
             dept_limit.append((d[0], max_limit[1]))
         return (True, dept_limit)
+
+#deptinfo = dynamicMaxLimitHandler(departs)
+#print(deptinfo)
 
 def departmentUrlHandler(deptinfo):
     if deptinfo[0] == False:
@@ -56,3 +62,26 @@ def departmentUrlHandler(deptinfo):
             else:
                 dept_urls.append(dept_course_links[1])
         return (True, dept_urls)
+
+#print(departmentUrlHandler(deptinfo))
+#deptUrls = departmentUrlHandler(deptinfo) #[1]
+#print(len(deptUrls))
+
+
+def departmentCourseContentHandler(deptCourseUrls):
+    if deptCourseUrls[0] == False:
+        return (False, [])
+    else:
+        deptUrls = deptCourseUrls[1]
+        deptCourses = []
+        for dept in deptUrls:
+            dept_course_urls = getCourseContentHandler(dept)
+            if dept_course_urls[0] == False:
+                return (False, [])
+            else:
+                deptCourses.append(dept_course_urls[1])
+    return deptCourses
+
+#deptCourseContent = departmentCourseContentHandler(deptUrls)
+#print(deptCourseContent)
+#print(len(deptCourseContent))
