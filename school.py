@@ -100,10 +100,10 @@ def prepCsv(deptCourseContent):
                 csvInfo = []
                 for dep, info in zip(depart, deptCourseInfo):
                     csvInfo.append((dep[1], info))
-                return (csvInfo)
+                return (True, csvInfo)
             else:
                 return (False, [])
 
-csv = prepCsv(deptCourseContent)
-#print(csv)
-#print(len(csv))
+csvPreparedInformation = prepCsv(deptCourseContent)
+#print(csvPreparedInformation)
+#print(csvPreparedInformation))

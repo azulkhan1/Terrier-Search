@@ -1,0 +1,56 @@
+courseCode,courseName,hub(s),prereqs,credit
+COM JO 150,Hist/Prin of Jo, Historical Consciousness,None,4
+COM JO 200,Newswriting, Critical Thinking Research and Information Literacy Writing-Intensive Course,"First Year Writing Seminar (e.g., WR 100 or WR 120) and COM CO201.",4
+COM JO 205,Visual Storytelling, Digital/Multimedia Expression Creativity/Innovation,None,4
+COM JO 210,Reporting in Depth, The Individual in Community Research and Information Literacy Writing-Intensive Course,JO 200 and JO 205,4
+COM JO 300,Media & Democracy - Journalism in an Age of Disinformation, The Individual in Community Ethical Reasoning Research and Information Literacy,JO150 and at least junior standing.,4
+COM JO 309,Feature Writing,None,COM JO 210.,4
+COM JO 312,Photojournalism I,None,COM JO 205.,4
+COM JO 322,Smart Phone Reporting, Digital/Multimedia Expression Research and Information Literacy Writing-Intensive Course,JO200,4
+COM JO 350,Law and Ethics of Journalism, Ethical Reasoning Social Inquiry II Research and Information Literacy,None,4
+COM JO 351,Reporting With Audio and Video,None,JO200 and JO205,4
+COM JO 358,"British Journalism, Culture, and Society", Global Citizenship and Intercultural Literacy Creativity/Innovation,None,4
+COM JO 400,Newsroom,None,"JO150, JO200, JO205, and JO210",4
+COM JO 403,Magazine Writing and Editing,None,COM JO 250 and COM JO 310.,4
+COM JO 412,Professional Journalism Internship,None,JO200 and JO205; junior standing; at least a 2.0 GPA in COM,Var
+COM JO 435,Online Radio Newsroom,None,COM JO 351.,4
+COM JO 455,Journalism Professional Project - Undergrad,None,"JO150, JO200, JO205, and JO210.",Var
+COM JO 490,Directed Studies,None,consent of instructor.,Var
+COM JO 500,Media Criticism,None,None,4
+COM JO 502,Journalism Special Topics,None,COM JO 200.,4
+COM JO 503,Journalism Research,None,None,4
+COM JO 504,Arts Criticism,None,None,4
+COM JO 505,Race & Gender in the News Media,None,None,4
+COM JO 508,Multi-platform Story Editing,None,COM JO 200 and COM JO 205.,4
+COM JO 511,Covering Government and Politics,None,COM JO 200 and COM JO 210.,4
+COM JO 513,Photojournalism II,None,COM JO 312; or consent of instructor.,4
+COM JO 514,Sports Journalism,None,COM JO 200.,4
+COM JO 516,Foreign Reporting,None,Pre-req: JO200 or JO721,4
+COM JO 519,Narrative Radio, The Individual in Community Oral and/or Signed Communication Creativity/Innovation,None,4
+COM JO 521,Data Journalism,None,JO 200,4
+COM JO 522,Filmmaking for Journalists,None,COM JO 205.,4
+COM JO 523,The Presidency and the Media,None,None,4
+COM JO 525,Media Law and Ethics,None,Required of all journalism majors. Recommended to be taken after COM JO357.,4
+COM JO 530,Drafts of History, Oral and/or Signed Communication Social Inquiry II,COM JO 357.,4
+COM JO 535,Investigative and Project Reporting,None,COM JO 200 and COM JO 210.,4
+COM JO 537,Advanced Visual Storytelling,None,COM JO 205.,4
+COM JO 539,Global Health Storytelling, Global Citizenship and Intercultural Literacy Oral and/or Signed Communication Creativity/Innovation,None,4
+COM JO 541,The Art of the Interview,None,JO 351,4
+COM JO 542,The Literature of Journalism,None,None,4
+COM JO 543,Rescuing Lost Stories: Writing Nonfiction Narratives from the Archives, Historical Consciousness Creativity/Innovation Writing-Intensive Course,"First Year Writing Seminar (e.g., WR 100 or WR 120).",4
+COM JO 544,Trauma Journalism,None,JO 200,4
+COM JO 546,Statehouse Program,None,COM JO 250 and COM JO 310.,8
+COM JO 547,Sports Storytelling,None,None,4
+COM JO 550,Advanced Online Journalism,None,COM JO 304.,4
+COM JO 700,Jo Symposium,None,None,2
+COM JO 703,Magazine Writing,None,JO 721,4
+COM JO 704,Online Journalism,None,None,4
+COM JO 707,Video Reporting,None,None,4
+COM JO 711,Video Storytelling,None,JO 710 or permission of the instructor,4
+COM JO 712,Online Radio Newsroom,None,COM JO 721.,4
+COM JO 719,Feature Writing,None,COM JO 721.,4
+COM JO 721,Introduction to Reporting,None,None,4
+COM JO 734,Television Newsroom,None,COM JO 721 ; COM JO 707 ; COM JO 711.,4
+COM JO 737,Journalism Internship,None,None,Var
+COM JO 954,Directed Study,None,consent of instructor,Var
+COM JO 955,Professional Project,None,Consent of instructor,Var

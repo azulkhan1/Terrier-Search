@@ -1,0 +1,82 @@
+courseCode,courseName,hub(s),prereqs,credit
+COM CM 180,Understanding Media,None,None,4
+COM CM 211,Professional Presentation, Oral and/or Signed Communication,None,4
+COM CM 215,Principles and Practices of Public Relations,None,None,4
+COM CM 217,Introduction to Advertising,None,None,4
+COM CM 280,Persuasion Theory,None,COM CM 180.,4
+COM CM 313,Corporate Communication,None,CM215,4
+COM CM 321,Communication Research Methods,None,COM CM180,4
+COM CM 331,Writing for Communication, Writing-Intensive Course,"CO201 AND First Year Writing Seminar (e.g., WR 100 or WR 120).",4
+COM CM 334,Advertising in the U.K., Philosophical Inquiry and Life's Meanings Aesthetic Exploration,None,4
+COM CM 335,Advertising Strategy,None,None,4
+COM CM 405,Media Strategy,None,COM CM 217 or COM CM 317.,4
+COM CM 412,Advertising Strategy & Consumer Insights,None,COMCM217,4
+COM CM 413,Problem Solving in British Public Relations, Social Inquiry I Digital/Multimedia Expression Creativity/Innovation,None,4
+COM CM 417,Fundamentals of Creative Development,None,COM CM 217 or COM CM 317.,4
+COM CM 419,Advertising Management,None,COM CM217,4
+COM CM 423,Portfolio Development 1,None,COM CM 217 and COM CM 417.,4
+COM CM 424,Portfolio Development II,None,COM CM 217 ; COM CM 417 ; COM CM 423.,4
+COM CM 441,Media Strategies and Management,None,COM CM 215 and COM CM 331.,4
+COM CM 442,Business Fundamentals for Public Relations,None,COM CM215,4
+COM CM 443,Digital Media and PR,None,COM CM215,4
+COM CM 457,Seminar in Global Promotional Strategies, Global Citizenship and Intercultural Literacy Social Inquiry II Critical Thinking,None,4
+COM CM 471,Communication Internship,None,"COM CM 331; AND Junior + good academic standing, AND for Advertising: COMCM217; Public Relations: COMCM215; Media Science: COMCM280",Var
+COM CM 474,Directed Study,None,consent of instructor and advisor.,Var
+COM CM 481,Media Law and Policy,None,Sophomore standing.,4
+COM CM 501,Design Strategy & Software, Aesthetic Exploration Digital/Multimedia Expression Creativity/Innovation,Sophomore standing.,4
+COM CM 506,Governmental Public Affairs,None,COM CM 215.,4
+COM CM 510,Media Expression and Communication, Digital/Multimedia Expression,Sophomore standing.,4
+COM CM 511,Art Direction,None,COM CM 417.,4
+COM CM 513,Investor Relations,None,COM CM 215.,4
+COM CM 518,Creative Video Development, Digital/Multimedia Expression Teamwork/Collaboration Creativity/Innovation,COM CM 217 and COM CM 417.,4
+COM CM 519,Interactive Marketing Strategy,None,COM CM 215 or COM CM 217.,4
+COM CM 520,the COMmunicator,None,COM CM 331; Consent of Instructor Required,2
+COM CM 521,International Marketing Communications and Public Relations, Social Inquiry I Oral and/or Signed Communication,None,4
+COM CM 522,Managing Corporate Crises,None,COM CM 215.,4
+COM CM 523,Design and Interactive Experiences,None,COM CM 501 or COM CM 510.,4
+COM CM 524,Public Relations Career Management,None,COM CM215; Senior in the Public Relations track/major.,4
+COM CM 525,Public Relations Ethics, Ethical Reasoning,CM215 or CM701,4
+COM CM 527,Brand Experience Marketing,None,COM CM 217 and COM CM 417.,4
+COM CM 528,Advertising Copywriting,None,COM CM 217 and COM CM 417.,4
+COM CM 529,Design Strategy & Software II,None,COM CM 501.,4
+COM CM 530,Public Relations in Nonprofit Settings,None,CM215,4
+COM CM 535,Political Campaigns,None,Sophomore standing.,4
+COM CM 539,Health Campaigns,None,Sophomore standing.,4
+COM CM 548,International Public Relations,None,COM CM 215.,4
+COM CM 555,Advanced Media Writing,None,COM CM 331.,4
+COM CM 557,Media Effects,None,COM CM 180 and COM CM 321.,4
+COM CM 561,Special Topics,None,CM722,4
+COM CM 580,PRLab, Teamwork/Collaboration,COM CM 215 and COM CM 331; junior standing,Var
+COM CM 581,PRLab Executive Board, Teamwork/Collaboration,COM CM 215 and COM CM 331; consent of instructor,Var
+COM CM 585,AdLab, Teamwork/Collaboration,COM CM 217 or COM CM 317; Junior Standing,Var
+COM CM 586,AdLab E-Board, Teamwork/Collaboration,COM CM 217 or COM CM 317; Consent of Instructor,Var
+COM CM 700,Financial & Strategic Management for Communication Professionals,None,None,4
+COM CM 701,Contemporary Public Relations,None,None,4
+COM CM 703,Basic Media Writing,None,None,4
+COM CM 707,Writing for Media Professionals,None,None,4
+COM CM 708,Principles and Practices of Advertising,None,None,4
+COM CM 709,Corporate Public Affairs,None,COM CM 701.,4
+COM CM 710,Media Theory,None,None,4
+COM CM 712,Advertising Strategy & Consumer Insights,None,COM CM 708.,4
+COM CM 713,Media Law and Policy,None,None,4
+COM CM 714,Professional Presentations,None,None,4
+COM CM 716,New & Traditional Media Strategies,None,COM CM 708.,4
+COM CM 717,Fundamentals of Creative Development,None,None,4
+COM CM 718,Advertising Strategy & Consumer Insights II,None,COM CM712,4
+COM CM 721,Advertising Management,None,COM CM 708.,4
+COM CM 722,Communication Research,None,None,4
+COM CM 723,Advanced Communication Research,None,COM CM 722.,4
+COM CM 724,Sampling Design and Measurement Techniques,None,Consent of Instructor,4
+COM CM 726,Strategic Brand Solutions,None,COM CM 708.,4
+COM CM 730,Marketing Communication,None,None,4
+COM CM 739,Social Media Strategy,None,COM CM 722.,4
+COM CM 742,Strategic Media Relations and Management,None,CM701 AND CM707 OR CM703,4
+COM CM 743,New Media & Public Relations,None,COM CM 701.,4
+COM CM 750,Advanced Writing for Media Professionals,None,CM703 or CM707,4
+COM CM 753,Portfolio Development I,None,COM CM 708 and COM CM 717.,4
+COM CM 754,Portfolio Development II,None,COM CM 708 ; COM CM 717 ; COM CM 753.,4
+COM CM 809,Graduate Internship,None,one  semesters of graduate study.,Var
+COM CM 824,Technical Writing for Communication Research,None,COM CM 722 ; COM CM 723 ; COM CM 724.,4
+COM CM 831,International Communication,None,None,4
+COM CM 901,Directed Studies,None,"Consent of advisor and instructor. Supervised reading, fieldwork, or research for student's specific needs.",Var
+COM CM 909,Thesis or Project Research,None,consent of instructor,4

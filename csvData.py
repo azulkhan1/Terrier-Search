@@ -1,30 +1,28 @@
 import csv
-from major import getCourseContentHandler, getUrlsHandler, dynamicMaxLimit
+from school import csvPreparedInformation
 
-try:
+def create_csv_files(csv_prepared_info):
+    success, departments_data = csv_prepared_info 
 
-    success_limit, limit_value = dynamicMaxLimit()
+    if not success:
+        raise ValueError("The data preparation was not successful.")
 
-    if success_limit:
-        urls = getUrlsHandler(limit_value)
+    for department_name, courses in departments_data:
+        sanitized_department_name = "".join(char for char in department_name if char.isalnum() or char in (' ', '_')).rstrip()
+        filename = f"{sanitized_department_name.replace(' ', '_')}.csv"
 
-        if urls:
-            success_content, data_array = getCourseContentHandler(urls)
+        with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+            headers = courses[0].keys()
+            writer = csv.DictWriter(csvfile, fieldnames=headers)
+            writer.writeheader()
 
-            if success_content and isinstance(data_array, list):
-                with open('majorCourses.csv', 'w', newline='') as csvfile:
-                    fieldnames = data_array[0].keys()
-                    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-                    writer.writeheader()
-                    for row in data_array:
-                        writer.writerow(row)
-            else:
-                print("No content to write to CSV.")
-        else:
-            print("Failed to obtain URLs.")
-    else:
-        print("Failed to obtain limit.")
+            for course in courses:
+                writer.writerow(course)
 
-except Exception as e:
-    print("An exception occurred:", str(e))
+        print(f"CSV file created for department: {department_name}")
+
+if isinstance(csvPreparedInformation, tuple) and csvPreparedInformation[0]:
+    create_csv_files(csvPreparedInformation)
+else:
+    print("csvPreparedInformation has an unexpected structure or the preparation was unsuccessful.")
 

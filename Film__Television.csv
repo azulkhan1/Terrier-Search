@@ -1,0 +1,103 @@
+courseCode,courseName,hub(s),prereqs,credit
+COM FT 201,"Screen Language: The Aesthetics, Grammar and Rhetoric of the Moving Image", Digital/Multimedia Expression Creativity/Innovation,None,4
+COM FT 250,Understanding Film, Aesthetic Exploration Critical Thinking,None,4
+COM FT 303,Understanding Television, Aesthetic Exploration Historical Consciousness Critical Thinking,None,4
+COM FT 304,Film Industry,None,COM FT 250.,4
+COM FT 310,Storytelling for Film & Television, Creativity/Innovation Writing-Intensive Course,"First Year Writing Seminar (e.g., WR 100 or WR 120).",4
+COM FT 325,Creative Producing I,None,COM FT 303.,4
+COM FT 353,Production I F1,None,COM FT 201; with a grade of B- or higher,4
+COM FT 401,Romantic Comedies and Melodramas,None,COM FT 250.,4
+COM FT 402,Production II, Oral and/or Signed Communication Teamwork/Collaboration,FT353 with a grade of B- or higher and one of the following: FT502 orFT508 or FT526 or FT565 or FT592 or FT 593,4
+COM FT 404,Asian Cinema,None,COM FT 250.,4
+COM FT 411,Screenwriting I, Creativity/Innovation Writing-Intensive Course,COM FT 310.,4
+COM FT 412,Screenwriting II,None,COM FT 411.,4
+COM FT 417,TV Management,None,None,4
+COM FT 425,Creative Producing II,None,None,4
+COM FT 430,Producing the Short Script,None,None,4
+COM FT 454,Pitch to Pilot,None,None,4
+COM FT 457,American Masterworks,None,None,4
+COM FT 458,International Masterworks,None,None,4
+COM FT 468,Production III,None,COM FT 402; application required,4
+COM FT 491,Directed Studies,None,consent of supervising faculty and department chair,Var
+COM FT 492,Directed Studies,None,consent of supervising faculty and department chair,Var
+COM FT 493,Internship,None,"junior standing, a 3.0 GPA for COM courses, completion of COM FT 201 & COM FT 310. This includes Film/TV internships through abroad programs",Var
+COM FT 494,Internship,None,"junior standing, a 3.0 GPA for COM courses, completion of COM FT 201 & COM FT 310. This includes Film/TV internships through abroad programs",Var
+COM FT 500,Writing Film Criticism, Aesthetic Exploration Critical Thinking,None,4
+COM FT 502,Sound Design for Film and Television,None,COM FT 353.,4
+COM FT 504,Post production FX Editing,None,COM FT 353.,4
+COM FT 505,Real World Productions,None,COM FT 353; a 3.0 COM GPA,4
+COM FT 507,Television Studio Production,None,COM FT 201; COM FT 201 or Instructor Consent,4
+COM FT 508,Line Producing for Undergrads,None,FT353,4
+COM FT 509,Broadcasting Horror,None,None,4
+COM FT 512,Writing Episodic Drama for Television,None,COM FT 310.,4
+COM FT 513,Global Queer Cinema,None,None,4
+COM FT 514,Writing the Television Pilot,None,COM FT 512 or COM FT 522.,4
+COM FT 516,Writing The Sitcom Pilot,None,COM FT 512 or COM FT 522.,4
+COM FT 518,Media Money Trail,None,COM FT 517.,4
+COM FT 519,Storyboarding,None,COM FT 353.,4
+COM FT 520,Television Studies,None,COM FT 303.,4
+COM FT 521,Promoting Your Content Online,None,None,4
+COM FT 522,Writing Television Situation Comedy Scripts,None,COM FT 310.,4
+COM FT 523,American Cinema to 1960,None,None,4
+COM FT 524,International Cinema,None,None,4
+COM FT 526,Directing,None,COM FT 353.,4
+COM FT 527,Crowdfunding and Distribution,None,FT201,4
+COM FT 532,NBC: Anatomy of a Network,None,COM FT 303.,4
+COM FT 534,Critical TV Industry Studies,None,COM FT 303.,4
+COM FT 536,Film Theory and Criticism,None,Undergraduate pre-req: FT250,4
+COM FT 538,City in Film,None,None,4
+COM FT 541,TV Genres,None,COM FT 303.,4
+COM FT 542,Advanced Screenwriting,None,COM FT 412.,4
+COM FT 544,Documentary Production,None,COM FT 353.,4
+COM FT 545,Television and Childhood,None,None,4
+COM FT 547,Avant Garde Cinema,None,COM FT 250.,4
+COM FT 552,Special Topics,None,None,4
+COM FT 553,Film Analytics,None,.,4
+COM FT 554,Special Topics,None,None,4
+COM FT 555,The Narrative Documentary Practicum,None,FT 402  B+ or Better.   Or by permission of Instructor,4
+COM FT 556,American Independent Film-Part 1 The Foundational Masterworks,None,None,4
+COM FT 557,American Independent Film-Part 2 The Second Generation,None,consent of instructor.,4
+COM FT 561,Contemporary East Asian Cinema,None,None,4
+COM FT 565,Motion Picture Editing,None,FT353,4
+COM FT 570,Uncensored TV: The rise of Original Scripted Series on Cable TV,None,COM FT 303.,4
+COM FT 571,Religion and TV,None,COM FT 303.,4
+COM FT 572,Streaming TV,None,COM FT 303.,4
+COM FT 573,BUTV,None,None,2
+COM FT 576,Global New Wave,None,COM FT 250.,4
+COM FT 589,Advanced Directing,None,COM FT 526.,4
+COM FT 590,2D Animation Basics,None,COM FT 201.,4
+COM FT 591,Media Business Entrepreneurship,None,None,4
+COM FT 592,Production Design,None,COM FT 353.,4
+COM FT 593,Introduction to Cinematography,None,COM FT 353.,4
+COM FT 595,Intermediate Cinematography,None,COM FT 593.,4
+COM FT 597,Advanced Cinematography,None,COM FT 595.,4
+COM FT 700,Fundamentals of Interactive Media,None,None,4
+COM FT 701,Media in Evolution,None,None,4
+COM FT 702,Script To Film,None,None,4
+COM FT 704,Genre for Screenwriters,None,None,4
+COM FT 705,Comedies and Melodramas for Graduate Students,None,None,4
+COM FT 707,Introduction to Video Production,None,None,4
+COM FT 708,ASIAN CINEMA FOR GRADUATE STUDENTS,None,None,4
+COM FT 711,Screenwriting I,None,None,4
+COM FT 715,Market Analysis & Research for Creative Ventures,None,None,4
+COM FT 717,TV Management,None,None,4
+COM FT 718,Writing the Television Drama Spec Script,None,COM FT 716; Production of video projects using A/B editing suites and computer graphics.,4
+COM FT 719,Writing the Half-Hour Scripted Comedy,None,None,4
+COM FT 720,Writing the Social Purpose Short,None,None,4
+COM FT 721,International Masterworks,None,None,4
+COM FT 722,American Masterworks,None,None,4
+COM FT 724,Screenwriting III,None,None,4
+COM FT 725,Creative Producing II,None,None,4
+COM FT 727,Creative Producing I,None,None,4
+COM FT 728,Creating New Ideas,None,None,4
+COM FT 729,Script Analysis,None,None,4
+COM FT 730,Screen Adaptation I,None,COM FT 713.,4
+COM FT 731,Screenwriting IV,None,COM FT 730.,4
+COM FT 736,Film Theory,None,None,4
+COM FT 825,Thesis Project,None,None,Var
+COM FT 851,Thesis Preparation,None,None,4
+COM FT 852,Thesis Project,None,None,Var
+COM FT 951,Directed Studies,None,consent of supervising faculty and department chair.,Var
+COM FT 952,Directed Studies,None,consent of supervising faculty and department chair,Var
+COM FT 953,Internship,None,None,Var
+COM FT 954,Internship,None,None,Var
