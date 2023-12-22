@@ -63,11 +63,20 @@ def getCourseContent(url):
     else:
         soup = BeautifulSoup(data[1], 'html.parser')
         course_code = soup.h2.text
-        courseContent['courseCode'] = course_code
+        courseContent['Course Code'] = course_code
 
         h1_elements = soup.find_all('h1')
         course_name = h1_elements[1].text.strip()
-        courseContent['courseName'] = course_name
+        courseContent['Course Name'] = course_name
+
+        course_content_div = soup.find('div', id='course-content')
+        if course_content_div:
+            first_paragraph_text = course_content_div.find('p').get_text()
+            # if "Effective Fall" in first_paragraph_text:
+            #     first_paragraph_text = first_paragraph_text.split("Effective Fall")[0]
+            # elif "Effective Spring" in first_paragraph_text:
+            #     first_paragraph_text = first_paragraph_text.split("Effective Spring")[0]
+            courseContent['Course Description'] = first_paragraph_text
 
         offerings_ul = soup.find('ul', class_="cf-hub-offerings")
         if offerings_ul:  
@@ -75,24 +84,25 @@ def getCourseContent(url):
             hubs = ""
             for hub in bu_hubs:
                 hubs += " " +hub
-            courseContent['hub(s)'] = hubs
+            courseContent['Hub Units'] = hubs
         else:
             hubs = "None"
-            courseContent['hub(s)'] = hubs
+            courseContent['Hub Units'] = hubs
 
         info_box_div = soup.find('div', id="info-box")
         dd_elements = info_box_div.find_all('dd')
         if len(dd_elements) == 1:
             credit = dd_elements[0].text.strip() 
             prereqs = "None"
-            courseContent['prereqs'] = prereqs
-            courseContent['credit'] = credit
+            courseContent['Prerequisites'] = prereqs
+            courseContent['Credits'] = credit
         else:
             credit = dd_elements[0].text.strip() 
             prereqs = dd_elements[1].text.strip()
-            courseContent['prereqs'] = prereqs
-            courseContent['credit'] = credit
+            courseContent['Prerequisites'] = prereqs
+            courseContent['Credits'] = credit
 
+        courseContent['link'] = url
         return (True, courseContent)
 
 def getCourseContentHandler(urls):
