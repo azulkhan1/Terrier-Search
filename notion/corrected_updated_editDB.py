@@ -2,7 +2,7 @@ import requests
 import json
 import re
 
-NOTION_TOKEN = 'secret_tKsdODcmoS0hQNPBQ6Ew7zDjdGj83OU1Tv77pG2xTY2'
+NOTION_TOKEN = Notion_API_TOKEN
 
 headers = {
     'Authorization': f'Bearer {NOTION_TOKEN}',
@@ -39,7 +39,7 @@ def update_course_with_link(database_items):
             raise Exception(f'Error updating page: {update_response.text}')
 
 
-database_id = '7dc4512c1acd491f8b8e1df4b8ae7836'
+database_id = NOTION_DATABASE_ID
 database_data = fetch_database(database_id)
 
 update_course_with_link(database_data)
