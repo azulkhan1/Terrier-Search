@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from major import getPage, dynamicMaxLimit, getUrlsHandler, getCourseContentHandler
+from makeCSVData import create_csv_file_for_department
 
 url = getPage('https://www.bu.edu/academics/com/courses/')
 
@@ -74,15 +75,19 @@ def departmentCourseContentHandler(deptCourseUrls):
     else:
         deptUrls = deptCourseUrls[1]
         deptCourses = []
+        depttracker = 1
         for dept in deptUrls:
             dept_course_urls = getCourseContentHandler(dept)
             if dept_course_urls[0] == False:
                 return (False, [])
             else:
+                create_csv_file_for_department("major" + str(depttracker), dept_course_urls[1])
                 deptCourses.append(dept_course_urls[1])
+                depttracker +=1
     return (True, deptCourses)
 
 deptCourseContent = departmentCourseContentHandler(deptUrls)
+departmentCourseContentHandler()
 #print(deptCourseContent)
 #print(len(deptCourseContent))
 
@@ -104,6 +109,6 @@ def prepCsv(deptCourseContent):
             else:
                 return (False, [])
 
-csvPreparedInformation = prepCsv(deptCourseContent)
+csvPreparedInformation = prepCsv(deptCourseContent)[1]
 #print(csvPreparedInformation)
 #print(csvPreparedInformation))
