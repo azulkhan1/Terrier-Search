@@ -72,10 +72,6 @@ def getCourseContent(url):
         course_content_div = soup.find('div', id='course-content')
         if course_content_div:
             first_paragraph_text = course_content_div.find('p').get_text()
-            # if "Effective Fall" in first_paragraph_text:
-            #     first_paragraph_text = first_paragraph_text.split("Effective Fall")[0]
-            # elif "Effective Spring" in first_paragraph_text:
-            #     first_paragraph_text = first_paragraph_text.split("Effective Spring")[0]
             courseContent['Course Description'] = first_paragraph_text
 
         offerings_ul = soup.find('ul', class_="cf-hub-offerings")
